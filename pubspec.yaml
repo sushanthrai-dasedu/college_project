@@ -1,0 +1,52 @@
+name: cash_counter
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_screenutil: ^5.5.3+2
+  bot_toast: ^4.0.2
+  flutter_animation_progress_bar: ^2.2.1
+  flutter_staggered_grid_view: ^0.7.0
+  syncfusion_flutter_calendar: ^20.2.38
+  get: ^4.6.1
+  get_it: ^7.2.0
+  shared_preferences: ^2.0.7
+  lottie: ^3.0.0
+  bloc: ^8.0.3
+  equatable: ^2.0.3
+  flutter_bloc: ^8.0.1
+  json_serializable: ^6.1.5
+  json_annotation: ^4.4.0
+  dio: ^5.4.0
+  shimmer: ^3.0.0
+  fluttertoast: ^8.0.9
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  flutter_localizations:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
