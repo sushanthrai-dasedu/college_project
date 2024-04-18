@@ -1,15 +1,18 @@
-import 'package:cash_counter/core/const/responsive_size_consts.dart';
-import 'package:cash_counter/localization/language/languages.dart';
-import 'package:cash_counter/ui/auth/ui/widgets/auth_container.dart';
-import 'package:cash_counter/ui/common/ui/widgets/app_textview.dart';
-import 'package:cash_counter/ui/theme/theme_const.dart';
-import 'package:cash_counter/utility/form_validators.dart';
+import 'package:leave_tracker/ui/theme/theme_const.dart';
+
+import '../../../../../core/const/responsive_size_consts.dart';
+import '../../../../../localization/language/languages.dart';
+import '../../../../../utility/view_utility.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/Router/navigator.dart';
 import '../../../../core/const/assets_constants.dart';
 import '../../../../responsive.dart';
+import '../../../../utility/form_validators.dart';
+import '../../../common/ui/widgets/app_textview.dart';
+import '../widgets/auth_container.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -304,7 +307,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     width: 300,
                                     child: InkWell(
                                       onTap: (){
-                                        Navigator.popAndPushNamed(context, Routes.homePage);
+                                        Navigator.popAndPushNamed(context, Routes.userHomePage);
                                       },
                                       child: Container(
                                         decoration: BoxDecoration(

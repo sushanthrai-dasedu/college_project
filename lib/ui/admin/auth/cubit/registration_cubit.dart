@@ -3,8 +3,8 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../../core/data_models/auth/registration_response.dart';
-import '../../../core/repository/repository.dart';
+import '../../../../core/data_models/auth/registration_response.dart';
+import '../../../../core/repository/repository.dart';
 
 part 'registration_state.dart';
 

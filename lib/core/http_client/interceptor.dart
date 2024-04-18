@@ -1,8 +1,10 @@
-import 'package:cash_counter/core/di/service_locator.dart';
-import 'package:cash_counter/core/repository/repository.dart';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+
+import '../di/service_locator.dart';
+import '../repository/repository.dart';
 
 class AppInterceptors extends Interceptor{
 

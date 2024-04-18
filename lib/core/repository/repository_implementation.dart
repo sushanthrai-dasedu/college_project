@@ -1,10 +1,11 @@
 
 
 
-import 'package:cash_counter/core/data_models/auth/registration_response.dart';
-import 'package:cash_counter/core/datasource/locale/local_datasource.dart';
-import 'package:cash_counter/core/repository/repository.dart';
 
+import 'package:leave_tracker/core/repository/repository.dart';
+
+import '../data_models/auth/registration_response.dart';
+import '../datasource/locale/local_datasource.dart';
 import '../datasource/remote/remote_datasource.dart';
 
 class RepositoryImpl implements AppRepository{

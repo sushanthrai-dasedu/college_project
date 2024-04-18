@@ -8,13 +8,13 @@ abstract class Languages {
 
   String get appName;
 
-  String get cashCounter;
+  String get userHome;
 
-  String get receipts;
+  String get userHolidayList;
 
-  String get reports;
+  String get userLeaveApply;
 
-  String get profile;
+  String get userProfile;
 
   String get closeCashCounter;
 

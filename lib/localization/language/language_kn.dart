@@ -1,11 +1,12 @@
-import 'package:cash_counter/localization/language/languages.dart';
+
+import 'languages.dart';
 
 class LanguageKn extends Languages {
   @override
   String get appName => "ನಗದು ಕೌಂಟರ್";
 
   @override
-  String get cashCounter => "ನಗದು ಕೌಂಟರ್";
+  String get userHome => "ಮುಖಪುಟ";
 
   @override
   String get closeCashCounter => "ನಗದು ಕೌಂಟರ್ ಮುಚ್ಚಿ";
@@ -17,16 +18,16 @@ class LanguageKn extends Languages {
   String get password => "ಪಾಸ್‌ವರ್ಡ್";
 
   @override
-  String get profile => "ಪ್ರೊಫೈಲ್";
+  String get userProfile => "ಪ್ರೊಫೈಲ್";
 
   @override
-  String get receipts => "ರಶೀದಿಗಳು";
+  String get userHolidayList => "ರಜಾ ಪಟ್ಟಿ";
 
   @override
   String get registerDevice => "ಸಾಧನವನ್ನು ನೋಂದಾಯಿಸಿ";
 
   @override
-  String get reports => "ವರದಿಗಳು";
+  String get userLeaveApply => "ರಜೆ ಅನ್ವಯಿಸಿ";
 
   @override
   String get userName => "ಬಳಕೆದಾರ ಹೆಸರು";

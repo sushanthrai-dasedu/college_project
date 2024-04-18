@@ -1,20 +1,19 @@
 
 
-import 'package:cash_counter/core/const/constants.dart';
-import 'package:cash_counter/core/datasource/locale/local_datasource.dart';
-import 'package:cash_counter/core/datasource/locale/locle_datesource_implementation.dart';
-import 'package:cash_counter/core/repository/repository_implementation.dart';
-import 'package:cash_counter/localization/language/languages.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get_it/get_it.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../ui/auth/cubit/registration_cubit.dart';
+import '../const/constants.dart';
+import '../datasource/locale/local_datasource.dart';
+import '../datasource/locale/locle_datesource_implementation.dart';
 import '../datasource/remote/remote_datasource.dart';
 import '../datasource/remote/remote_datasource_implementation.dart';
 import '../http_client/dio_client.dart';
 import '../repository/repository.dart';
+import '../repository/repository_implementation.dart';
 
 
 GetIt serviceLocator = GetIt.instance;

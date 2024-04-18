@@ -1,6 +1,7 @@
-import 'package:cash_counter/core/const/responsive_size_consts.dart';
-import 'package:cash_counter/ui/theme/theme_const.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../../../core/const/responsive_size_consts.dart';
 
 class AppTextView extends StatefulWidget {
   const AppTextView({

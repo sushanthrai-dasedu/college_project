@@ -1,4 +1,5 @@
-import 'package:cash_counter/core/data_models/auth/user_details.dart';
+
+import 'package:leave_tracker/core/data_models/auth/user_details.dart';
 
 class RegistrationResponse {
   bool? success;

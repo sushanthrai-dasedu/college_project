@@ -1,9 +1,10 @@
-import 'package:cash_counter/core/const/constants.dart';
-import 'package:cash_counter/core/data_models/auth/registration_response.dart';
-import 'package:cash_counter/core/datasource/remote/remote_datasource.dart';
+
 import 'package:dio/dio.dart';
+import 'package:leave_tracker/core/datasource/remote/remote_datasource.dart';
 
 import '../../../localization/language/languages.dart';
+import '../../const/constants.dart';
+import '../../data_models/auth/registration_response.dart';
 import '../../di/service_locator.dart';
 import '../../http_client/dio_client.dart';
 

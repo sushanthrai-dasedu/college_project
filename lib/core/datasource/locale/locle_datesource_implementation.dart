@@ -1,6 +1,7 @@
-import 'package:cash_counter/core/const/shared_pref_consts.dart';
-import 'package:cash_counter/core/datasource/locale/local_datasource.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../const/shared_pref_consts.dart';
+import 'local_datasource.dart';
 
 class LocalDatasourceImpl implements LocaleDatasource{
 

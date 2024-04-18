@@ -1,7 +1,8 @@
 
 import 'dart:ui';
 
-import 'package:cash_counter/localization/locale_constant.dart';
+import 'locale_constant.dart';
+
 
 class LanguageData {
   final String flag;

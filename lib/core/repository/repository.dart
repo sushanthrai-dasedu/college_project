@@ -1,5 +1,6 @@
 
-import 'package:cash_counter/core/data_models/auth/registration_response.dart';
+
+import '../data_models/auth/registration_response.dart';
 
 abstract class AppRepository{
 

@@ -1,9 +1,11 @@
-import 'package:cash_counter/localization/language/languages.dart';
-import 'package:cash_counter/ui/theme/theme_const.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:leave_tracker/ui/theme/theme_const.dart';
 
-import '../../../../core/const/assets_constants.dart';
+import '../../../../../core/const/assets_constants.dart';
+import '../../../../../localization/language/languages.dart';
+
 
 class AppBottomNavigation extends StatefulWidget {
   const AppBottomNavigation({super.key, required this.selectedIndex, required this.onTabChange});
@@ -18,7 +20,20 @@ class AppBottomNavigation extends StatefulWidget {
 class _AppBottomNavigationState extends State<AppBottomNavigation> {
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
+    return  Container(
+        margin: EdgeInsets.all(8),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(40),
+          color: Colors.transparent,
+          boxShadow: [
+            BoxShadow(color: Colors.black38, spreadRadius: 0, blurRadius: 20),
+          ],
+        ),
+        child: ClipRRect(
+
+        borderRadius: BorderRadius.circular(8),
+
+    child:BottomNavigationBar(
         currentIndex: widget.selectedIndex,
         onTap: widget.onTabChange,
         selectedLabelStyle: Theme.of(context).textTheme.labelSmall!.copyWith(
@@ -33,12 +48,14 @@ class _AppBottomNavigationState extends State<AppBottomNavigation> {
         selectedItemColor: Theme.of(context).colorScheme.white,
         unselectedItemColor: Theme.of(context).colorScheme.white,
         items: <BottomNavigationBarItem>[
-          buildBottomNavigationBarItem(iconName: Assets.cashIcon,selectedIcon: Assets.selectedCashIcon, label: Languages.of(context).cashCounter, selectedIndex: widget.selectedIndex, index: 0),
-          buildBottomNavigationBarItem(iconName: Assets.receiptsIcon,selectedIcon: Assets.selectedReceiptsIcon, label: Languages.of(context).receipts, selectedIndex: widget.selectedIndex, index: 1),
-          buildBottomNavigationBarItem(iconName: Assets.reportsIcon,selectedIcon: Assets.selectedReportsIcon, label: Languages.of(context).reports, selectedIndex: widget.selectedIndex, index: 2),
-          buildBottomNavigationBarItem(iconName: Assets.profileIcon,selectedIcon: Assets.selectedProfileIcon, label: Languages.of(context).profile, selectedIndex: widget.selectedIndex, index: 3),
+          buildBottomNavigationBarItem(iconName: Assets.cashIcon,selectedIcon: Assets.selectedCashIcon, label: Languages.of(context).userHome, selectedIndex: widget.selectedIndex, index: 0),
+          buildBottomNavigationBarItem(iconName: Assets.receiptsIcon,selectedIcon: Assets.selectedReceiptsIcon, label: Languages.of(context).userHolidayList, selectedIndex: widget.selectedIndex, index: 1),
+          buildBottomNavigationBarItem(iconName: Assets.reportsIcon,selectedIcon: Assets.selectedReportsIcon, label: Languages.of(context).userLeaveApply, selectedIndex: widget.selectedIndex, index: 2),
+          buildBottomNavigationBarItem(iconName: Assets.profileIcon,selectedIcon: Assets.selectedProfileIcon, label: Languages.of(context).userProfile, selectedIndex: widget.selectedIndex, index: 3),
 
         ],
+    ),
+        )
     );
   }
 
@@ -59,5 +76,6 @@ class _AppBottomNavigationState extends State<AppBottomNavigation> {
       ),
       label: label,
     );
+
   }
 }

@@ -54,7 +54,7 @@ class ThemeConst {
 
 
   static const ColorScheme _lightColorScheme = ColorScheme(
-    primary: Color(0xFF336699),
+    primary: Color(0xFFB766FF),
     // changed to new theme
     secondary: Color(0xFFB5E7FE),
     // changed to new theme
@@ -177,8 +177,8 @@ class ThemeConst {
 }
 
 extension ColorExtends on ColorScheme {
-  static const primaryColorl = Color(0xFF336699);
-  static const primaryColorD = Color(0xFF336699);
+  static const primaryColorl = Color(0xFFB766FF);
+  static const primaryColorD = Color(0xFFB766FF);
   static const primaryColorLightl = Color(0xFFB5E7FE);
   static const primaryColorLightD = Color(0xFFB5E7FE);
   static const greyl = Color(0xFFD9D9D9);

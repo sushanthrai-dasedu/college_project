@@ -1,16 +1,17 @@
 
 import 'package:bot_toast/bot_toast.dart';
-import 'package:cash_counter/core/di/service_locator.dart';
-import 'package:cash_counter/localization/language_data.dart';
-import 'package:cash_counter/ui/auth/cubit/registration_cubit.dart';
-import 'package:cash_counter/ui/main/ui/pages/app_main.dart';
-import 'package:cash_counter/ui/theme/theme_const.dart';
-import 'package:cash_counter/utility/string_consts.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:leave_tracker/ui/admin/auth/cubit/registration_cubit.dart';
+import 'package:leave_tracker/ui/main/ui/pages/app_main.dart';
+import 'package:leave_tracker/ui/theme/theme_const.dart';
+import 'package:leave_tracker/utility/string_consts.dart';
 
 import 'core/Router/navigator.dart';
+import 'core/di/service_locator.dart';
+import 'localization/language_data.dart';
 import 'localization/locale_constant.dart';
 import 'localization/localizations_delegate.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

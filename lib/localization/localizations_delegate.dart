@@ -1,11 +1,11 @@
 
-import 'package:cash_counter/localization/language_data.dart';
 import 'package:flutter/material.dart';
 
 
 import 'language/language_en.dart';
 import 'language/language_kn.dart';
 import 'language/languages.dart';
+import 'language_data.dart';
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<Languages> {
 

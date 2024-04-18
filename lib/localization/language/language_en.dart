@@ -5,7 +5,7 @@ class LanguageEn extends Languages {
   String get appName => "Cash Counter";
 
   @override
-  String get cashCounter => "Cash Counter";
+  String get userHome => "Leave Tracker";
 
   @override
   String get closeCashCounter => "Close cash counter";
@@ -17,16 +17,16 @@ class LanguageEn extends Languages {
   String get password => "Password";
 
   @override
-  String get profile => "Profile";
+  String get userProfile => "Profile";
 
   @override
-  String get receipts => "Receipts";
+  String get userHolidayList => "Holidays";
 
   @override
   String get registerDevice => "Register Device";
 
   @override
-  String get reports => "Reports";
+  String get userLeaveApply => "Leave Apply";
 
   @override
   String get userName => "User Name";
