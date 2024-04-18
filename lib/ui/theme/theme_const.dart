@@ -185,6 +185,11 @@ extension ColorExtends on ColorScheme {
   static const greyD = Color(0xFFD9D9D9);
   static const greyLightl = Color(0xFFF5F5F5);
   static const greyLightD = Color(0xFFF5F5F5);
+
+  static const greyveryLightl = Color(0xDEDEE1E6);
+  static const greyveryLightD = Color(0xDEDEE1E6);
+
+
   static const whitel = Color(0xFFFFFFFF);
   static const whiteD = Color(0xFFFFFFFF);
   static const primaryTextColorl = Color(0xFF555555);
@@ -198,6 +203,7 @@ extension ColorExtends on ColorScheme {
   Color get primaryColorLight => _lightTheme ? primaryColorLightl : primaryColorLightD;
   Color get grey => _lightTheme ? greyl : greyD;
   Color get greyLight => _lightTheme ? greyLightl : greyLightD;
+  Color get greyveryLight => _lightTheme ? greyveryLightl : greyveryLightD;
   Color get white => _lightTheme ? whitel : whiteD;
   Color get primaryTextColor => _lightTheme ? primaryTextColorl : primaryTextColorD;
   Color get secondaryTextColor => _lightTheme ? secondaryTextColorl : secondaryTextColorD;

@@ -151,6 +151,17 @@ class AppFormFieldValidator {
   }
 
 
+  static String? validateDDdate(String? value,BuildContext context) {
+    //update this based on the requirement
+    if(value == null || value.isEmpty){
+      return "Please Enter Date";
+    }else {
+      return null;
+    }
+
+  }
+
+
   static String? validatePan(String? value) {
     Pattern pattern = r'^[A-Z]{5}[0-9]{4}[A-Z]{1}$';
     RegExp regex =  RegExp(pattern.toString());

@@ -35,6 +35,8 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
          builder: (context, constraints) {
          return SafeArea(
            child: Scaffold(
+             resizeToAvoidBottomInset: false,
+
              body: LayoutBuilder(
                builder: (context, constraints) {
                    // Show bottom navigation for mobile

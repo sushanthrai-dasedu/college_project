@@ -36,10 +36,14 @@ class _AdminHomeScreenState extends State<AdminHomeScreen> {
         builder: (context, constraints) {
           return SafeArea(
             child: Scaffold(
+              resizeToAvoidBottomInset: false,
+
               body: LayoutBuilder(
                   builder: (context, constraints) {
                     // Show bottom navigation for mobile
                     return Scaffold(
+                        resizeToAvoidBottomInset: false,
+
                         appBar: AdminAppBarWidget(selectedIndex),
                         body: getSelectedScreen(selectedIndex),
                         bottomNavigationBar: AdminAppBottomNavigation(selectedIndex: selectedIndex, onTabChange: onTabChange,)

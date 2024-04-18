@@ -65,7 +65,10 @@ class _LoginScreenState extends State<LoginScreen> {
         }
 
         return SafeArea(
+
             child: Scaffold(
+              resizeToAvoidBottomInset: false,
+
               body: SingleChildScrollView(
                 child: Stack(
                   children: [
